@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Room } from "@/data/rooms";
 import RoomFeature from "./RoomFeature";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -11,17 +11,34 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useState } from "react";
 
 interface RoomCardProps {
   room: Room;
 }
 
 const RoomCard = ({ room }: RoomCardProps) => {
+  const [_, setActiveIndex] = useState(0);
+  const navigate = useNavigate();
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    // Check if the click is on a carousel control button
+    const target = e.target as HTMLElement;
+    const isCarouselControl = target.closest('button[data-carousel-control]');
+    
+    if (!isCarouselControl) {
+      navigate(`/room/${room.id}`);
+    }
+  };
+
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg hover:scale-105 duration-300">
-      <Link to={`/room/${room.id}`} className="block">
+      <div onClick={handleCardClick} className="cursor-pointer">
         <div className="relative h-48 sm:h-64">
-          <Carousel className="w-full">
+          <Carousel 
+            className="w-full"
+            onSelect={(index) => setActiveIndex(index)}
+          >
             <CarouselContent>
               <CarouselItem key={room.image}>
                 <img
@@ -40,8 +57,16 @@ const RoomCard = ({ room }: RoomCardProps) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
+            <CarouselPrevious 
+              className="left-2" 
+              data-carousel-control="true"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <CarouselNext 
+              className="right-2" 
+              data-carousel-control="true"
+              onClick={(e) => e.stopPropagation()}
+            />
           </Carousel>
           <div className="absolute top-4 right-4">
             {room.isBooked ? (
@@ -86,7 +111,7 @@ const RoomCard = ({ room }: RoomCardProps) => {
             {room.isBooked ? "Not Available" : "View Details"}
           </span>
         </CardFooter>
-      </Link>
+      </div>
     </Card>
   );
 };
