@@ -18,7 +18,7 @@ interface RoomCardProps {
 }
 
 const RoomCard = ({ room }: RoomCardProps) => {
-  const [_, setActiveIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
   const handleCardClick = (e: React.MouseEvent) => {
@@ -37,7 +37,7 @@ const RoomCard = ({ room }: RoomCardProps) => {
         <div className="relative h-48 sm:h-64">
           <Carousel 
             className="w-full"
-            onSelect={(index) => setActiveIndex(index)}
+            onSelect={(selectedIndex) => setCurrentIndex(selectedIndex)}
           >
             <CarouselContent>
               <CarouselItem key={room.image}>
