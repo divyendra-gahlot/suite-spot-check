@@ -11,7 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface RoomCardProps {
   room: Room;
@@ -31,13 +31,25 @@ const RoomCard = ({ room }: RoomCardProps) => {
     }
   };
 
+  // Auto-change images every 3 seconds
+  useEffect(() => {
+    const totalImages = (room.additionalImages?.length || 0) + 1; // +1 for the main image
+    
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [room.additionalImages]);
+
   return (
     <Card className="overflow-hidden transition-all hover:shadow-lg hover:scale-105 duration-300">
       <div onClick={handleCardClick} className="cursor-pointer">
         <div className="relative h-48 sm:h-64">
           <Carousel 
             className="w-full"
-            onSelect={(selectedIndex) => setCurrentIndex(selectedIndex)}
+            value={currentIndex}
+            onValueChange={setCurrentIndex}
           >
             <CarouselContent>
               <CarouselItem key={room.image}>
