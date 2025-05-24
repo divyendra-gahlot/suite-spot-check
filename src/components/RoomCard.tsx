@@ -70,14 +70,16 @@ const RoomCard = ({ room }: RoomCardProps) => {
               ))}
             </CarouselContent>
             <CarouselPrevious 
-              className="left-2" 
+              className="absolute left-2 h-8 w-8"
               data-carousel-control="true"
               onClick={(e) => e.stopPropagation()}
+              variant="outline"
             />
             <CarouselNext 
-              className="right-2" 
+              className="absolute right-2 h-8 w-8"
               data-carousel-control="true"
               onClick={(e) => e.stopPropagation()}
+              variant="outline"
             />
           </Carousel>
           <div className="absolute top-4 right-4">
