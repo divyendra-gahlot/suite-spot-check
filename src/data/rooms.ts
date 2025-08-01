@@ -1,5 +1,5 @@
 
-// Import images
+// Import images - Real apartment photos
 import room1Main from "@/assets/images/room1-main.png";
 import room1Additional1 from "@/assets/images/room1-additional1.png";
 import room1Additional2 from "@/assets/images/room1-additional2.png";
