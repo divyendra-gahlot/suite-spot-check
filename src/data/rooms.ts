@@ -1,4 +1,13 @@
 
+// Import images
+import room1Main from "@/assets/images/room1-main.png";
+import room1Additional1 from "@/assets/images/room1-additional1.png";
+import room1Additional2 from "@/assets/images/room1-additional2.png";
+import room1Additional3 from "@/assets/images/room1-additional3.png";
+import room1Additional4 from "@/assets/images/room1-additional4.png";
+import room1Additional5 from "@/assets/images/room1-additional5.png";
+import room1Additional6 from "@/assets/images/room1-additional6.png";
+
 export interface Room {
   id: string;
   name: string;
@@ -18,10 +27,14 @@ export const rooms: Room[] = [
     description: "Double/Triple Occupancy",
     price: 7999,
     isBooked: false,
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: room1Main,
     additionalImages: [
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      room1Additional1,
+      room1Additional2,
+      room1Additional3,
+      room1Additional4,
+      room1Additional5,
+      room1Additional6
     ],
     features: ["Bright & Airy", "Attached Washroom", "Private Kitchen Setup", "Spacious & Furnished", "High-Speed WiFi", "Water Purifier", "24x7 CCTV Surveillance", "Safe Neighbourhood", "Power Backup", "Utility Aangan"],
     fullDescription: "Bright & Airy: Well-ventilated room with ample natural sunlight and cooling breeze—perfect for summers. Attached Washroom: Comes with a clean, private in-room washroom for added comfort. Private Kitchen Setup: Includes a dedicated kitchen area for convenient cooking. Spacious & Furnished: Fully furnished with a bed, study table, and chair—ideal for both comfort and productivity. High-Speed WiFi: Seamless internet access for work or entertainment. Water Purifier: Clean drinking water available at all times. 24x7 CCTV Surveillance: Constant security monitoring for peace of mind. Safe Neighbourhood: Located in a secure and friendly locality. Power Backup: Uninterrupted electricity with reliable backup support. Utility Aangan: Designated space for washing utensils and drying clothes."
