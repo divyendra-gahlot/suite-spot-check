@@ -78,8 +78,8 @@ const RoomDetails = () => {
                 <p className="text-lg text-gray-600 mt-2">{room.description}</p>
               </div>
               <div className="mt-4 md:mt-0 text-right">
-                <p className="text-3xl font-bold text-blue-600">${room.price}</p>
-                <p className="text-gray-600">per night</p>
+                <p className="text-3xl font-bold text-blue-600">₹{room.price}</p>
+                <p className="text-gray-600">per month</p>
               </div>
             </div>
             

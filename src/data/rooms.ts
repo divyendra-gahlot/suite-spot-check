@@ -14,23 +14,27 @@ export interface Room {
 export const rooms: Room[] = [
   {
     id: "deluxe",
-    name: "Deluxe Suite",
-    description: "Spacious suite with king-size bed and city view",
-    price: 299,
+    name: "Spacious Studio Appartment with Garden View",
+    description: "Double/Triple Occupancy",
+    price: 7999,
     isBooked: false,
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/82e641ea-9a24-4732-8dfa-6d6676919b2b.png",
     additionalImages: [
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/lovable-uploads/0e060fab-e513-48b4-8f13-50d7d0276e45.png",
+      "/lovable-uploads/42d10e26-6723-4e0c-8285-fa20e2b88c36.png",
+      "/lovable-uploads/b0b8eec7-aff5-46a4-a2f3-4010a66f8817.png",
+      "/lovable-uploads/6842e536-553a-4f54-ae9a-dd252cc4e9bc.png",
+      "/lovable-uploads/a9b310d4-471c-4a97-92b8-6cca7b8944f0.png",
+      "/lovable-uploads/a73793cf-cc52-47c4-ba50-ad0586f7d45c.png"
     ],
-    features: ["King Bed", "Free WiFi", "55\" Smart TV", "Mini Bar", "Room Service", "City View", "Bathtub", "Workspace"],
-    fullDescription: "Our Deluxe Suite offers unparalleled luxury with panoramic city views. Featuring a spacious layout with a separate living area, this suite is perfect for those looking to indulge. The king-size bed with premium linens ensures a restful night's sleep, while the marble bathroom with deep soaking tub provides the ultimate relaxation experience."
+    features: ["Bright & Airy", "Attached Washroom", "Private Kitchen Setup", "Spacious & Furnished", "High-Speed WiFi", "Water Purifier", "24x7 CCTV Surveillance", "Safe Neighbourhood", "Power Backup", "Utility Aangan"],
+    fullDescription: "🪟 Bright & Airy: Well-ventilated room with ample natural sunlight and cooling breeze—perfect for summers.\n🚿 Attached Washroom: Comes with a clean, private in-room washroom for added comfort.\n🧑‍🍳 Private Kitchen Setup: Includes a dedicated kitchen area for convenient cooking.\n🛏️ Spacious & Furnished: Fully furnished with a bed, study table, and chair—ideal for both comfort and productivity.\n📶 High-Speed WiFi: Seamless internet access for work or entertainment.\n💧 Water Purifier: Clean drinking water available at all times.\n🎥 24x7 CCTV Surveillance: Constant security monitoring for peace of mind.\n🌇 Safe Neighbourhood: Located in a secure and friendly locality.\n🔌 Power Backup: Uninterrupted electricity with reliable backup support.\n🪣 Utility Aangan: Designated space for washing utensils and drying clothes."
   },
   {
     id: "executive",
     name: "Executive Room",
     description: "Elegant room with work desk and premium amenities",
-    price: 199,
+    price: 15999,
     isBooked: true,
     image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [
@@ -44,7 +48,7 @@ export const rooms: Room[] = [
     id: "family",
     name: "Family Suite",
     description: "Perfect for families with separate living area",
-    price: 399,
+    price: 25999,
     isBooked: false,
     image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [
@@ -58,7 +62,7 @@ export const rooms: Room[] = [
     id: "standard",
     name: "Standard Room",
     description: "Comfortable and cozy room for budget travelers",
-    price: 119,
+    price: 8999,
     isBooked: false,
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [
@@ -72,7 +76,7 @@ export const rooms: Room[] = [
     id: "penthouse",
     name: "Penthouse Suite",
     description: "Luxury penthouse with panoramic views and private terrace",
-    price: 599,
+    price: 45999,
     isBooked: true,
     image: "https://images.unsplash.com/photo-1602595183435-323ee4a46e19?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [
@@ -86,7 +90,7 @@ export const rooms: Room[] = [
     id: "ocean",
     name: "Ocean View",
     description: "Beautiful room with stunning ocean views",
-    price: 349,
+    price: 29999,
     isBooked: false,
     image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [

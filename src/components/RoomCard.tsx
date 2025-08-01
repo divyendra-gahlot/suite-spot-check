@@ -97,8 +97,8 @@ const RoomCard = ({ room }: RoomCardProps) => {
               <p className="text-muted-foreground text-sm mt-1">{room.description}</p>
             </div>
             <div className="text-right">
-              <p className="text-2xl font-bold">${room.price}</p>
-              <p className="text-xs text-muted-foreground">per night</p>
+              <p className="text-2xl font-bold">₹{room.price}</p>
+              <p className="text-xs text-muted-foreground">per month</p>
             </div>
           </div>
         </CardHeader>
