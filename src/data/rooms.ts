@@ -18,14 +18,10 @@ export const rooms: Room[] = [
     description: "Double/Triple Occupancy",
     price: 7999,
     isBooked: false,
-    image: "/lovable-uploads/82e641ea-9a24-4732-8dfa-6d6676919b2b.png",
+    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     additionalImages: [
-      "/lovable-uploads/0e060fab-e513-48b4-8f13-50d7d0276e45.png",
-      "/lovable-uploads/42d10e26-6723-4e0c-8285-fa20e2b88c36.png",
-      "/lovable-uploads/b0b8eec7-aff5-46a4-a2f3-4010a66f8817.png",
-      "/lovable-uploads/6842e536-553a-4f54-ae9a-dd252cc4e9bc.png",
-      "/lovable-uploads/a9b310d4-471c-4a97-92b8-6cca7b8944f0.png",
-      "/lovable-uploads/a73793cf-cc52-47c4-ba50-ad0586f7d45c.png"
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     ],
     features: ["Bright & Airy", "Attached Washroom", "Private Kitchen Setup", "Spacious & Furnished", "High-Speed WiFi", "Water Purifier", "24x7 CCTV Surveillance", "Safe Neighbourhood", "Power Backup", "Utility Aangan"],
     fullDescription: "Bright & Airy: Well-ventilated room with ample natural sunlight and cooling breeze—perfect for summers. Attached Washroom: Comes with a clean, private in-room washroom for added comfort. Private Kitchen Setup: Includes a dedicated kitchen area for convenient cooking. Spacious & Furnished: Fully furnished with a bed, study table, and chair—ideal for both comfort and productivity. High-Speed WiFi: Seamless internet access for work or entertainment. Water Purifier: Clean drinking water available at all times. 24x7 CCTV Surveillance: Constant security monitoring for peace of mind. Safe Neighbourhood: Located in a secure and friendly locality. Power Backup: Uninterrupted electricity with reliable backup support. Utility Aangan: Designated space for washing utensils and drying clothes."
